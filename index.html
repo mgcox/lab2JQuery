@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>CupBop</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link href="main.css" rel="stylesheet">
+	<script src="https://use.fontawesome.com/68789675dd.js"></script>
+	<nav class="navbar navbar-default" style="border-radius:0px;">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">TV Time</a>
+			</div>
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="#">Home</a></li>
+				<li><a href="#" class="scroll-link" data-id="menu">Menu</a></li>
+				<li><a href="#">Page 2</a></li> 
+				<li><a href="#">Page 3</a></li> 
+			</ul>
+		</div>
+	</nav>
+</head>
+<body>	
+	<div class="jumbotron text-center">
+		<img class = "food" src="jetski.png" alt="$grandma" style="height:500px;">
+		<h1>Channel Surfing is over, TV Ski.</h1>
+	</div>
+
+
+
+	<div class="row text-center">
+		<div class="col-sm-4">
+			<div class="panel panel-default">
+  				<div class="panel-body">
+  					<img src="eiffel.jpg" class="img-rounded" alt="Cinque Terre" >
+  				</div>
+	  			<div class="panel-footer"><h3>The Eiffel Tower</h3> I finally saw the Eiffel Tower. It was pretty. I think it looks better at night though.</div>
+			</div>
+		</div>
+		<div class="col-sm-4">
+						<div class="panel panel-default">
+  				<div class="panel-body">
+  					  					<img src="marie-et-cie-cafe.jpg" class="img-rounded" alt="Cinque Terre" width="304" >
+
+  				</div>
+	  			<div class="panel-footer">This is the Marie Et Cafe. I had the hardest time wanting to leave this place. Guilty, I went there twice one day.</div>
+			</div>
+		</div>
+		<div class="col-sm-4">
+						<div class="panel panel-default">
+  				<div class="panel-body">Panel Content</div>
+	  			<div class="panel-footer">Panel Footer</div>
+			</div>
+
+		</div>
+	</div>
+	
+<script>
+function genSig() {
+    var apikey = "7azrg29nbvj24tzkaxp66a4x";
+    var secret = "uTbcrpe8NX";
+    var curdate = new Date();
+    var gmtstring = curdate.toGMTString();
+    var utc = Date.parse(gmtstring) / 1000;
+    return = hex_md5(apikey + secret + utc);
+}
+</script>
+
+</body>
+</html>
