@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>CupBop</title>
+	<title>TV JetSki</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -30,28 +30,39 @@
 	<div class="jumbotron text-center">
 		<img class = "food" src="jetski.png" alt="$grandma" style="height:500px;">
 		<h1>Channel Surfing is over, TV Ski.</h1>
-	</div>
-	<div>
-	</div>
+		<div class="btn-group dropdown">
+			<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">Select A Channel
+				<span class="caret"></span></button>
+				<ul class="dropdown-menu text-center">
+					<li><a href="#">ABC</a></li>
+					<li><a href="#">CBS</a></li>
+					<li><a href="#">FOX</a></li>
+				</ul>
+			</div>
+		</div>
+		<div>
+		</div>
 
-<div class="container text-center">
-<h1>Jet Ski Over to the Best </h1>
+		<div class="container text-center">
+			<h1>Jet Ski Over to the Best </h1>
 
-<div ng-repeat="x in shows">
-	{{x.name}} {{x.plot}} {{x.rating}} {{x.genre}}
-	<div class="media">
-	  <div class="media-left media-middle">
-	    <img src="img_avatar1.png" class="media-object" style="width:60px">
-	  </div>
-	  <div class="media-body">
-	    <h4 class="media-heading">Media Middle</h4>
-	    <p>Lorem ipsum...</p>
-	  </div>
-	</div>
-</div>
+			<div ng-repeat="x in shows">
+				
+				<div class="media">
+					<div class="media-left media-top">
+						<img src={{x.image}} class="media-object" style="width:200px">
+						<h3>Rating: {{x.rating}}</h3>
+					</div>
+					<div class="media-body">
+						<h2 class="media-heading">{{x.name}}</h2>
+						<h4>{{x.plot}}</h4>
+						<p>Genre(s): {{x.genre}}</p>
+					</div>
+				</div>
+			</div>
 
-</div>
+		</div>
 
 
-</body>
-</html>
+	</body>
+	</html>

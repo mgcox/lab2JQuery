@@ -2,6 +2,11 @@ body {
     background-color: #E3E5F4;
 }
 
+.btn-group > .btn,
+.btn-group-vertical > .btn {
+  position: relative;
+  float: left;
+}
 
 .jumbotron h1,
 .jumbotron .h1 {
