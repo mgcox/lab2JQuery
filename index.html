@@ -30,23 +30,25 @@
 	<div class="jumbotron text-center">
 		<img class = "food" src="jetski.png" alt="$grandma" style="height:500px;">
 		<h1>Channel Surfing is over, TV Ski.</h1>
-		<div class="btn-group dropdown">
-			<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">Select A Channel
-				<span class="caret"></span></button>
-				<ul class="dropdown-menu text-center">
-					<li><a href="#">ABC</a></li>
-					<li><a href="#">CBS</a></li>
-					<li><a href="#">FOX</a></li>
-				</ul>
-			</div>
-		</div>
 		<div>
+			<select id='list' ng-change="GetListings()" ng-model="dropDownValue">
+				<option selected disabled>Choose a network!</option>
+				<option value='ABC'>ABC</option>
+				<option value='CBS'>CBS</option>
+				<option value='FOX'>FOX</option>
+				<option value='NBC'>NBC</option>
+				<option value='ESPN'>ESPN</option>
+			</select>
 		</div>
+	</div>
+
+	<div>
+	</div>
 
 		<div class="container text-center">
 			<h1>Jet Ski Over to the Best </h1>
 
-			<div ng-repeat="x in shows">
+			<div ng-repeat="x in shows | orderBy:'-rating'" >
 				
 				<div class="media">
 					<div class="media-left media-top">
